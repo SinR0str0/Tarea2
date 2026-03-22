@@ -327,6 +327,7 @@ button {
     width: 0;
     height: 2px;
     background: var(--gradient-primary);
+    transition: width var(--transition-base);
     /* ERROR 7 (AVANZADO): La línea debajo del link aparece de golpe sin animación
        SOLUCIÓN: Falta la transición para la propiedad width
        Agregar: transition: width var(--transition-base);
@@ -434,6 +435,7 @@ button {
     /* ERROR 8: Los botones del hero están pegados sin espacio entre ellos
        PISTA: Falta la propiedad que define el espacio entre elementos flex */
     flex-wrap: wrap;
+    gap: var(--spacing-md);
 }
 
 .hero__image {
